@@ -1,2 +1,2 @@
-#Andy Wolfe's Art & Design
+# Andy Wolfe's Art & Design
 Portfolio website
