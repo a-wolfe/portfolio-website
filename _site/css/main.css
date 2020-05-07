@@ -29,7 +29,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
+  background-color: #fff;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -39,8 +39,12 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #000000;
   display: block;
+}
+
+.sidebar-nav-links li {
+  list-style-type: none;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -54,7 +58,11 @@
   padding: 0px 10px;
 }
 
-
+/* PHOTO GALLERY STYLES */
+.photo-gallery {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 /* MOBILE MENU */
 .mobile-menu-check,
