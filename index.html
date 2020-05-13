@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<h1>This is the site heading</h1>
-<h2>Statement</h2>
+<h1>Andy Wolfe</h1>
+<h2>Artist's Statement</h2>
 
-<div class="current photo-gallery">
-  <img src="http://placekitten.com/g/200/300" alt="Image title 1">
-  <img src="http://placekitten.com/g/200/300" alt="Image title 2">
-  <img src="http://placekitten.com/g/200/300" alt="Image title 3">
+<div class="photo-gallery">
+  {% for image in site.static_files %}
+      {% if image.path contains 'images/all' %}
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+      {% endif %}
+  {% endfor %}
 </div>
