@@ -3,12 +3,23 @@
   padding-left: 20vw;
 }
 
+.nav-links {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* HEADER STYLES */
 .header {
-  position:fixed;
-  width: 100%;
+  position: fixed;
+  width: 25vw;
   z-index: 20;
-  border-bottom: 1px solid black;
+  background-color: #fff;
+}
+
+.header-name {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3.5em;
+  padding-left: 2vw;
+  padding-top: 2vh;
 }
 
 .header-nav {
@@ -26,7 +37,7 @@
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 18vw; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 20; /* Stay on top */
+  z-index: 10; /* only displays below header and footer */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #fff;
@@ -37,10 +48,11 @@
 /* The navigation menu links */
 .sidebar-nav-links {
   list-style: none;
+  padding-top: 8vh;
 }
 
 .sidebar-nav-links a {
-  padding: 6px 0px;
+  padding: 2vh 0 0 2vw;
   text-decoration: none;
   font-size: 28px;
   color: #000000;
@@ -59,8 +71,40 @@
   padding: 0px 10px;
 }
 
+/* FOOTER STYLES */
+.footer {
+  background-color: #fff;
+  padding: 5vh 0 5vh 0vw;
+  text-align: center;
+  z-index: 20;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer > .social-list {
+  padding-top: 3vh;
+}
+
 /* PHOTO GALLERY STYLES */
 .photo-gallery {
+  padding-top: 10vh;
   display: flex;
   flex-flow: row wrap;
   flex-basis: 0;
@@ -71,8 +115,41 @@
 
 .photo-gallery img {
   padding: 10px;
-  max-width: 33%;
+  max-width: 89%;
   box-sizing: border-box;
+}
+
+/* SOCIAL STYLES */
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.social-link {
+  background: #000;
+  border-radius: 99px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1.7em;
+  font-weight: bold;
+  height: 1.5em;
+  line-height: 1;
+  padding-top: 0.25em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 1.5em;
+}
+
+.social-link:hover i {
+  color: #ccc;
+}
+
+.social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 /* MOBILE MENU */
