@@ -20,6 +20,7 @@
   font-size: 3.5em;
   padding-left: 2vw;
   padding-top: 2vh;
+  white-space: nowrap;
 }
 
 .header-nav {
@@ -48,11 +49,11 @@
 /* The navigation menu links */
 .sidebar-nav-links {
   list-style: none;
-  padding-top: 8vh;
+  padding: 10vh 0 0 1.5em;
 }
 
 .sidebar-nav-links a {
-  padding: 2vh 0 0 2vw;
+  padding: 1vh 0 1vh;
   text-decoration: none;
   font-size: 28px;
   color: #000000;
@@ -60,9 +61,14 @@
   list-style-type:
 }
 
+.sidebar-nav-links .current {
+  color: #ff69b9;
+  pointer-events: none;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidebar-nav-links a:hover {
-  color: #f1f1f1;
+  color: #454545;
 }
 
 /* Style page content */
@@ -96,6 +102,15 @@
 .footer-nav a {
   color: #000;
   text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #454545;
+}
+
+.footer-nav .current {
+  color: #ff69b9;
+  pointer-events: none;
 }
 
 .footer > .social-list {
@@ -143,8 +158,26 @@
   width: 1.5em;
 }
 
+.social-link:hover {
+  background: #000;
+  border-radius: 99px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1.7em;
+  font-weight: bold;
+  height: 1.5em;
+  line-height: 1;
+  padding-top: 0.25em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  opacity: 0.5;
+}
+
 .social-link:hover i {
-  color: #ccc;
+  opacity: 0.5;
 }
 
 .social-list > li {

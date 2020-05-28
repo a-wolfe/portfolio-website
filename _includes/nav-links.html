@@ -1,5 +1,5 @@
-<li><a href="/">Home</a></li>
-<li><a href="/Painting">Painting</a></li>
-<li><a href="/Ceramic">Ceramic</a></li>
-<li><a href="/Drawing">Drawing</a></li>
-<li><a href="/Photography">Photography</a></li>
+<li><a href="/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+<li><a href="/Painting" class="{% if page.url == '/painting.html' %}current{% endif %}">Painting</a></li>
+<li><a href="/Ceramic" class="{% if page.url == '/ceramic.html' %}current{% endif %}">Ceramic</a></li>
+<li><a href="/Drawing" class="{% if page.url == '/drawing.html' %}current{% endif %}">Drawing</a></li>
+<li><a href="/Photography" class="{% if page.url == '/photography.html' %}current{% endif %}">Photography</a></li>
