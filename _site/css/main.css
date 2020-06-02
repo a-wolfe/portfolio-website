@@ -10,7 +10,7 @@
 /* HEADER STYLES */
 .header {
   position: fixed;
-  width: 25vw;
+  width: 0vw;
   z-index: 20;
   background-color: #fff;
 }
@@ -21,16 +21,6 @@
   padding-left: 2vw;
   padding-top: 2vh;
   white-space: nowrap;
-}
-
-.header-nav {
-  float:right;
-  padding: 5.5vh 60px 0 0;
-}
-
-.header-nav > li {
-  display: inline-block;
-  margin-left: 1em;
 }
 
 /* SIDEBAR STYLES */
@@ -129,7 +119,7 @@
 }
 
 .photo-gallery img {
-  padding: 10px;
+  padding: 20px 30px 20px 40px;
   max-width: 89%;
   box-sizing: border-box;
 }
@@ -185,14 +175,45 @@
   margin: 0 0.5em;
 }
 
-/* MOBILE MENU */
-.mobile-menu-check,
-.show-mobile-menu {
-  display: none;
-}
+/* MEDIA STYLES */
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar-nav {padding-top: 15px;}
-  .sidebar-nav-links a {font-size: 18px;}
+@media (max-width: 800px) {
+
+  /* GLOBAL STYLES */
+
+  html {
+    padding: 0;
+  }
+  .sidebar-nav {
+    display: none;
+  }
+  .content-container {
+    padding: 0;
+  }
+
+  /* HEADER STYLES */
+
+  .header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 20;
+    background-color: #fff;
+  }
+  .header-name {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5em;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    white-space: nowrap;
+  }
+
+  /* MOBILE MENU */
+
+  /* PHOTO GALLERY STYLES */
+  .photo-gallery {
+    padding-top: 7vh;
+  }
+
 }
