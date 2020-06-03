@@ -175,6 +175,11 @@
   margin: 0 0.5em;
 }
 
+/* MOBILE MENU */
+.drop-menu {
+  display: none;
+}
+
 /* MEDIA STYLES */
 
 @media (max-width: 800px) {
@@ -210,6 +215,9 @@
   }
 
   /* MOBILE MENU */
+  .drop-menu {
+    display:inline;
+  }
 
   /* PHOTO GALLERY STYLES */
   .photo-gallery {
