@@ -1,14 +1,25 @@
 <header class="header">
-  <h1 class="header-name">ANDY WOLFE</h1>
-  <nav class="drop-menu">
-    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
-    <label for="mobile-menu" class="show-mobile-menu">
-      <a class="drop-trigger" href="index.html"><i class="fas fa-caret-down"></i></a>
-    </label>
-    <ul class="header-nav nav-links">
-    </ul>
-    <ul class="drop-menu-links">
+    <div class="header-name">
+        <h1>ANDY WOLFE</h1>
+    </div>
+    <div class="mobile-menu-trigger" onclick="burgeranimation(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <script>
+    function burgeranimation(x) {
+    x.classList.toggle("change");
+    }
+    </script>
+
+    <nav>
+      <ul class="mobile-menu nav-links">
       {% include nav-links.html %}
-    </ul>
-  </nav>
+      <div class="social-buttons">
+      {% include social-links.html %}
+      </div>
+      </ul>
+    </nav>
 </header>

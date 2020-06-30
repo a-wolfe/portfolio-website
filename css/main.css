@@ -22,14 +22,17 @@
   padding-top: 2vh;
   white-space: nowrap;
 }
+.mobile-menu-trigger {
+  display: none;
+}
 
 /* SIDEBAR STYLES */
 .sidebar-nav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 18vw; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 10; /* only displays below header and footer */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  width: 18vw;
+  position: fixed;
+  z-index: 10;
+  top: 0;
   left: 0;
   background-color: #fff;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -176,7 +179,7 @@
 }
 
 /* MOBILE MENU */
-.drop-menu {
+.mobile-menu {
   display: none;
 }
 
@@ -197,8 +200,94 @@
   }
 
   /* HEADER STYLES */
-
   .header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: flex-start;
+    width: 100vw;
+    height: 8vh;
+    z-index: 40;
+  }
+  .header-name {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 2vw;
+    padding-top: 1vh;
+  }
+  .mobile-menu {
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    height: 100vh;
+    background-color: #000;
+    align-items: center;
+    width: 50vw;
+    transform: translateX(100%);
+  }
+  .mobile-menu li {
+    list-style: none;
+    padding-top: 5vh;
+    flex-grow: 1;
+    font-size: 1.3em;
+  }
+  .nav-links > li:first-child {
+    padding-top: 8vh;
+  }
+  .nav-links > li:last-child {
+    padding-bottom: 50vh;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile-menu .current{
+    color: #ff69b9;
+  }
+
+  /* BURGER STYLES */
+  .mobile-menu-trigger {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding-top: 1.1vh;
+    transform: translateX(40vw);
+  }
+  .bar1, .bar2, .bar3 {
+    width: .9em;
+    height: .1em;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  /* rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-1px, 6px) ;
+    transform: rotate(-45deg) translate(-1px, 6px) ;
+  }
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -8px) ;
+    transform: rotate(45deg) translate(-4px, -8px) ;
+  }
+
+  /* SOCIAL STYLES */
+  .social-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 2vh;
+  }
+  .social-buttons li{
+    padding: 0 2vw;
+    font-size: 1em;
+  }
+  /* .header {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -212,12 +301,93 @@
     padding-left: 2vw;
     padding-top: 2vh;
     white-space: nowrap;
-  }
+  } */
 
   /* MOBILE MENU */
-  .drop-menu {
-    display:inline;
+  /* .show-mobile-menu {
+    display: block;
+    float: right;
+    margin-top: 1vh;
+    padding: 1.5em;
+    position: relative;
   }
+  .drop-menu-links {
+    background-color: #000;
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    transition: all 0.5s ease-in-out;
+    width: 100vw;
+  }
+  .drop-menu-links li {
+    display: block;
+    margin-top: 1em;
+  }
+  .drop-menu-links li ~ li{
+    border: 0;
+    padding: 0;
+  }
+  .drop-menu-links li:last-child {
+    margin-bottom: 1em;
+  }
+  .drop-menu-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .mobile-menu-check:checked ~ .drop-menu-links {
+    max-height: 1000px;
+  }
+  .mobile-menu-check {
+    opacity: 0;
+    left: 9999px;
+  }
+  .drop-menu {
+    position: relative;
+    display:inline;
+    float: right;
+  }
+  .mobile-menu-check:checked ~ .show-mobile-menu:after {
+    background-color: #fff;
+    content: "CLOSE";
+    left: 0;
+    position: absolute;
+    top: 1.5em;
+    width: 100%;
+    text-align: center;
+  } */
+  /* .drop-trigger {
+    display: inline-block;
+    position: relative;
+  }
+  .drop-trigger:after {
+    border: 0.3em solid;
+    border-color: #000 transparent transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0.3em;
+    width: 0;
+  }
+  .mobile-menu {
+    display:none;
+    list-style: none;
+    padding: 1em 0 0;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+  }
+  .mobile-menu li {
+    background-color: #000;
+  }
+  .mobile-menu a {
+    color: #fff
+    display: block;
+  } */
 
   /* PHOTO GALLERY STYLES */
   .photo-gallery {

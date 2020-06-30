@@ -21,32 +21,49 @@
 
   <body>
     <header class="header">
-  <h1 class="header-name">ANDY WOLFE</h1>
-  <nav class="drop-menu">
-    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
-    <label for="mobile-menu" class="show-mobile-menu">
-      <a class="drop-trigger" href="index.html"><i class="fas fa-caret-down"></i></a>
-    </label>
-    <ul class="header-nav nav-links">
-    </ul>
-    <ul class="drop-menu-links">
-      <li><a href="index.html" class=" dropdown">Home</a></li>
-<li><a href="painting.html" class=" dropdown">Painting</a></li>
-<li><a href="ceramic.html" class=" dropdown">Ceramic</a></li>
-<li><a href="drawing.html" class=" dropdown">Drawing</a></li>
-<li><a href="photography.html" class="current dropdown">Photography</a></li>
+    <div class="header-name">
+        <h1>ANDY WOLFE</h1>
+    </div>
+    <div class="mobile-menu-trigger" onclick="burgeranimation(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
 
-    </ul>
-  </nav>
+    <script>
+    function burgeranimation(x) {
+    x.classList.toggle("change");
+    }
+    </script>
+
+    <nav>
+      <ul class="mobile-menu nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+<li><a href="painting.html" class="">Painting</a></li>
+<li><a href="ceramic.html" class="">Ceramic</a></li>
+<li><a href="drawing.html" class="">Drawing</a></li>
+<li><a href="photography.html" class="current">Photography</a></li>
+
+      <div class="social-buttons">
+      <li>
+  <a href="https://github.com/a-wolfe" class="social-link"><i class="fab fa-github"></i></a>
+</li>
+<li>
+  <a href="mailto:awolfeart@gmail.com" class="social-link" target="_blank"><i class="far fa-envelope"></i></a>
+</li>
+
+      </div>
+      </ul>
+    </nav>
 </header>
 
     <div class="sidebar-nav">
   <ul class="sidebar-nav-links nav-links">
-    <li><a href="index.html" class=" dropdown">Home</a></li>
-<li><a href="painting.html" class=" dropdown">Painting</a></li>
-<li><a href="ceramic.html" class=" dropdown">Ceramic</a></li>
-<li><a href="drawing.html" class=" dropdown">Drawing</a></li>
-<li><a href="photography.html" class="current dropdown">Photography</a></li>
+    <li><a href="index.html" class="">Home</a></li>
+<li><a href="painting.html" class="">Painting</a></li>
+<li><a href="ceramic.html" class="">Ceramic</a></li>
+<li><a href="drawing.html" class="">Drawing</a></li>
+<li><a href="photography.html" class="current">Photography</a></li>
 
   </ul>
 </div>
@@ -371,11 +388,11 @@
   </a> -->
   <nav>
     <ul class="footer-nav nav-links">
-      <li><a href="index.html" class=" dropdown">Home</a></li>
-<li><a href="painting.html" class=" dropdown">Painting</a></li>
-<li><a href="ceramic.html" class=" dropdown">Ceramic</a></li>
-<li><a href="drawing.html" class=" dropdown">Drawing</a></li>
-<li><a href="photography.html" class="current dropdown">Photography</a></li>
+      <li><a href="index.html" class="">Home</a></li>
+<li><a href="painting.html" class="">Painting</a></li>
+<li><a href="ceramic.html" class="">Ceramic</a></li>
+<li><a href="drawing.html" class="">Drawing</a></li>
+<li><a href="photography.html" class="current">Photography</a></li>
 
     </ul>
   </nav>
