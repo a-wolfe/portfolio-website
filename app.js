@@ -1,9 +1,11 @@
 const navSlide = () => {
-  const burger = document.queryselector('.mobile-menu-trigger');
-  const nav = document.queryselector('.mobile-menu');
+  const burger = document.querySelector('.mobile-menu-trigger');
+  const nav = document.querySelector('.mobile-menu');
+  const navLinks = document.querySelectorAll('.nav-links li')
 
   burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
+    //Toggle Nav
+    nav.classList.toggle('mobile-menu-active');
   });
 }
 
