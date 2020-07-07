@@ -17,14 +17,12 @@
 
 .header-name {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 3.5em;
+  font-size: 4vw;
   padding-left: 2vw;
   padding-top: 2vh;
   white-space: nowrap;
 }
-.mobile-menu-trigger {
-  display: none;
-}
+
 
 /* SIDEBAR STYLES */
 .sidebar-nav {
@@ -42,16 +40,15 @@
 /* The navigation menu links */
 .sidebar-nav-links {
   list-style: none;
-  padding: 10vh 0 0 1.5em;
+  padding: 7vh 0 0 1.5em;
 }
 
 .sidebar-nav-links a {
-  padding: 1vh 0 1vh;
+  padding: 2vh 0 2vh;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 2.5vw;
   color: #000000;
   display: block;
-  list-style-type:
 }
 
 .sidebar-nav-links .current {
@@ -124,7 +121,7 @@
 
 .photo-gallery img {
   padding: 20px 30px 20px 40px;
-  max-width: 89%;
+  max-width: 95%;
   box-sizing: border-box;
 }
 
@@ -180,7 +177,8 @@
 }
 
 /* MOBILE MENU */
-.mobile-menu {
+
+.mobile-menu, .mobile-menu-trigger {
   display: none;
 }
 
@@ -217,8 +215,8 @@
     padding-top: 1vh;
   }
 
-
   /* MOBILE MENU STYLES */
+
   .mobile-menu {
     right: 0px;
     display: flex;
@@ -289,17 +287,6 @@
     transform: rotate(45deg) translate(-4px, -8px) ;
   }
 
-  @keyframes navLinkFade{
-    from{
-      opacity: 0;
-      transform: translateX(50px)
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0px)
-    }
-  }
-
   /* SOCIAL STYLES */
   .social-buttons {
     display: flex;
@@ -313,116 +300,6 @@
 
   /* FOOTER STYLES */
   .footer {
-    padding: 0 0 2vh;
+    display: none;
   }
-  .footer-nav .nav-links li{
-    padding: 0;
-  }
-  /* .header {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100vw;
-    z-index: 20;
-    background-color: #fff;
-  }
-  .header-name {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 2.5em;
-    padding-left: 2vw;
-    padding-top: 2vh;
-    white-space: nowrap;
-  } */
-
-  /* MOBILE MENU */
-  /* .show-mobile-menu {
-    display: block;
-    float: right;
-    margin-top: 1vh;
-    padding: 1.5em;
-    position: relative;
-  }
-  .drop-menu-links {
-    background-color: #000;
-    box-sizing: border-box;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    top: 10vh;
-    transition: all 0.5s ease-in-out;
-    width: 100vw;
-  }
-  .drop-menu-links li {
-    display: block;
-    margin-top: 1em;
-  }
-  .drop-menu-links li ~ li{
-    border: 0;
-    padding: 0;
-  }
-  .drop-menu-links li:last-child {
-    margin-bottom: 1em;
-  }
-  .drop-menu-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .mobile-menu-check:checked ~ .drop-menu-links {
-    max-height: 1000px;
-  }
-  .mobile-menu-check {
-    opacity: 0;
-    left: 9999px;
-  }
-  .drop-menu {
-    position: relative;
-    display:inline;
-    float: right;
-  }
-  .mobile-menu-check:checked ~ .show-mobile-menu:after {
-    background-color: #fff;
-    content: "CLOSE";
-    left: 0;
-    position: absolute;
-    top: 1.5em;
-    width: 100%;
-    text-align: center;
-  } */
-  /* .drop-trigger {
-    display: inline-block;
-    position: relative;
-  }
-  .drop-trigger:after {
-    border: 0.3em solid;
-    border-color: #000 transparent transparent;
-    content: "";
-    height: 0;
-    position: absolute;
-    right: 0;
-    top: 0.3em;
-    width: 0;
-  }
-  .mobile-menu {
-    display:none;
-    list-style: none;
-    padding: 1em 0 0;
-    position: absolute;
-    right: 0;
-    z-index: 9;
-  }
-  .mobile-menu li {
-    background-color: #000;
-  }
-  .mobile-menu a {
-    color: #fff
-    display: block;
-  } */
-
-  /* PHOTO GALLERY STYLES */
-  .photo-gallery {
-    padding-top: 7vh;
-  }
-
 }
