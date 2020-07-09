@@ -281,7 +281,6 @@
   .change .bar2 {
     opacity: 0;
   }
-
   /* Rotate last bar */
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-4px, -8px) ;
@@ -298,7 +297,10 @@
     padding: 0 2vw;
     font-size: 1em;
   }
-
+  /* PHOTOGALLERY STYLES */
+  .photo-gallery {
+    padding-top: 7vh;
+  }
   /* FOOTER STYLES */
   .footer {
     display: none;
