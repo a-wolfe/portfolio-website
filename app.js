@@ -1,6 +1,6 @@
 const navSlide = () => {
   const burger = document.querySelector('.mobile-menu-trigger');
-  const nav = document.querySelector('.mobile-menu');
+  const nav = document.querySelector('.nav-items');
   const navLinks = document.querySelectorAll('.nav-links li')
 
   burger.addEventListener('click', () => {
