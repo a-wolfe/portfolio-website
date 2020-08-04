@@ -258,7 +258,10 @@
     padding-top: 7vh;
   }
   /* FOOTER STYLES */
-  .footer {
+  .footer-nav {
+    display: none;
+  }
+  .footer > .social-list {
     display: none;
   }
 }
