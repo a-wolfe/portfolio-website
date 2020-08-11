@@ -4,8 +4,17 @@ layout: default
 
 <div class="photo-gallery">
   {% for image in site.static_files %}
-      {% if image.path contains 'images/all' %}
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-      {% endif %}
+    {% if image.path contains 'images/painting' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+    {% if image.path contains 'images/ceramic' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+    {% if image.path contains 'images/drawing' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+    {% if image.path contains 'images/photography' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
   {% endfor %}
 </div>
